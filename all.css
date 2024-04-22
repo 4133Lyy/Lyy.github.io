@@ -1,0 +1,171 @@
+@charset "UTF-8";
+	*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+	li{
+	list-style:none;
+	}
+	a{
+	text-decoration:none;
+	}
+	.wrapper{
+	margin:0 auto;
+	width:1840px;
+	}
+
+	body{
+	background-image:url(s5.png);
+	background-size:100%;
+	}
+
+	
+	.header{
+	display:flex;
+	height:88px;
+	}
+	
+	.logo{
+	margin-right:20px;
+	margin-left:70px;
+	margin-top:20px;
+	width:88px;
+	height:88px;
+	}
+	
+	.logo a{
+	display:block;
+	width:88px;
+	height:88px;
+	border-radius:44px;
+	background-image:url(k5.png);
+	font-size:0;
+	}
+
+	
+	.nav{
+	margin-top:33px;
+	margin-right:50px;
+	
+	}
+	
+	.nav ul{
+	display:flex;
+	
+	margin-left:800px;
+	}
+	
+	.nav li{
+	margin-left:50px;
+	}
+	
+	.nav li a{
+	font-size:23px;
+	color:#333;
+	padding-bottom:10px;
+	}
+	
+	.nav li a:hover{
+	border-bottom:2px solid #5EB69C;
+	color:#5EB69C;
+	}
+	
+	.search{
+	display:flex;
+	margin-top:33px;
+	margin-right:45px;
+	width:170px;
+	height:34px;
+	background-color:transparent;
+	border:0;
+	}
+	
+	.search .iconfont{
+	padding-top:5px;
+	margin-right:8px;
+	font-size:18px;
+	color:white;
+	}
+
+	.search input{
+	flex:1;
+	width:0;
+	border:0;
+	background-color:transparent;
+	font-size:40px;
+	}
+	.search input::placeholder{
+	font-size:16px;
+	color:white;
+	}
+
+	.banner{
+	height:500px;
+	background-color:transparent;
+	
+	}
+	
+	.banner .wrapper{
+	display:flex;
+	position:relative;
+
+	height:1100px;
+	overflow:hidden;
+	opacity:0.7;
+	}
+
+	.subnav{
+	position:absolute;
+	margin-top:50px;
+	left:0;
+	top:0;
+	width:250px;
+	height:1000px;
+	background-color:rgba(0,0,0,0.42);
+	}
+	.subnav li{
+	padding-left:50px;
+	padding-right:12px;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	cursor:pointer;
+	}
+	.subnav li:hover{
+	background-color:	#B0C4DE;
+	}
+	
+	.subnav li a{
+	margin-right:5px;
+	font-size:18px;
+	color:#fff;
+	}
+	
+	.one{
+	margin-top:50px;
+	margin-left:300px;
+	margin-right:100px;
+	padding:20px 50px;
+	width:1500px;
+	height:1000px;
+	background-color:white;
+	line-height:50px;
+	box-shadow:2px 5px 10px 1px rgba(0,0,0,0.5);
+	overflow:auto;
+	}
+
+	.gerenxinxi{
+	padding-top:50px;
+	font-size:20px;
+	}
+	.subnav li .biaozhu{
+	color:#CD5C5C;
+	}
+	
+
+	
+	
+	
+	
+	

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>第一章第一题</title>
+<link rel = "stylesheet" href = "./iconfont2/iconfont.css">
+<style>
+    @import url(all.css);
+</style>
+</head>
+<body>
+	<!-- 快捷导航 -->
+	<div class = "shortcut">
+		<div class = "wrapper">
+			<ul>
+				<li><a href = "http://localhost:8080/MyWeb/12.jsp" target = "_blank" >请先登录</a></li>
+				<li><a href = "#">免费注册</a></li>
+				<li><a href = "#">我的</a></li>
+				<li><a href = "#">会员中心</a></li>
+				<li><a href = "#">帮助中心</a></li>
+				<li><a href = "#">在线客服</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 头部 -->
+	<div class = "header wrapper">
+		<!-- logo -->
+		<div class = "logo">
+			<h1><a href = "#"></a></h1>
+		</div>
+		<div class = "gerenxinxi">202212303073廖燕燕</div>
+		<!-- 导航 -->
+		<div class = "nav">
+			<ul>
+				
+				<li><a href = "http://localhost:8080/LYY1/wangye.jsp" target = "_blank">首页</a></li>
+			
+			</ul>
+		</div>
+		<!-- 搜索 -->
+		<div class = "search">
+			<span class = "iconfont icon-search"></span>
+			<input type = "text" placeholder = "搜一搜">
+		</div>
+		
+
+	</div>
+
+		<!-- 图片 -->
+	<div class = "banner">
+		<div class = "wrapper">
+			<footer id="footerContent"></footer>
+			<div class = "one">
+				<p>
+	<h1>1.C/S架构和B/S架构的区别</h1>
+<h3>1、使用协议</h3>
+B/S架构更多的时候是使用了HTTP协议、而C/S架构更多的时候使用的WinSocket协议（TCP、UDP）
+<h3>2、开发和维护成本</h3>
+C/S架构开发维护成本高于B/S架构。因为需要开发客户端和服务器两套程序，所以开发成本会增加。因为采用cs结构时，对于不同的客户端要开发不同的程序，而且软件安装调试和升级都需要在所有客户机上进行
+B/S架构具备通用性，所以开发成本较低；因为不需要安装客户端，所以客户端不需要进行升级，只需要将服务器上的软件版本升级，然后从新登录就可以了。
+<h3>3、安全性</h3>
+C/S架构的安全性高。C/S架构适用于专人使用的系统，可以通过严格的管理派发软件。B/S架构使用人数多，不固定，安全性低。
+<h3>4、客户端负载</h3>
+c/s客户端负载大。cs客户端不仅负责和用户的交互，收集用户信息，而且还需要通过网络向服务器发出请求。
+b/s把事务处理逻辑部分交给了服务器，客户端只是负责显示。
+<h3>什么是基于B/S架构的web应用</h3>
+B/S，即Browser/Server(浏览器/服务器)架构，就是只安装维护一个服务器，而客户端采用浏览器运行软件。
+
+				</p>
+			</div>
+		</div>
+	
+		
+		</div>
+	</div>
+	
+
+</body>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#footerContent").load("subnav.html");
+		});
+	</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
