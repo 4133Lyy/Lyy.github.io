@@ -1,0 +1,243 @@
+/*首页样式*/
+
+/* 版心居中 */
+.wrapper{
+    margin:0 auto;
+    width:1200px;
+}
+body{
+    background-color:#f3f5f7;
+}
+.header{
+    height:100px;
+    background-color:#fff;
+}
+.header .wrapper{
+    padding-top:29px;
+    display:flex;
+}
+.logo a{
+    display:block;
+    width:195px;
+    height:41px;
+    background-image:url(../img/logo.png);
+}
+.nav{
+    margin-left:300px;
+}
+.nav ul{
+    display:flex;
+}
+.nav li{
+    margin-right:32px;
+}
+.nav li a{
+    display:block;
+    padding:6px 8px;
+    line-height:27px;
+    font-size:19px;
+}
+
+.nav li a:hover{
+    border-bottom:2px solid  #00a4ff;
+}
+.search{
+    display:flex;
+    margin-left:64px;
+    padding-left:19px;
+    padding-right:12px;
+    width:412px;
+    height:40px;
+    background-color:#f3f5f7;
+    border-radius:20px;
+}
+.search input{
+    flex:1;
+    border:0;
+    background-color:transparent;
+    /* outline去掉输入框边框 */
+    outline:none;
+}
+.search input::placeholder{
+    font-size:14px;
+    color:#999;
+}
+.search a{
+    align-self: center;
+    width:16px;
+    height:16px;
+    background-image:url(../images/search.png);
+}
+.user{
+    margin-left:32px;
+    margin-top:4px;
+}
+.user img{
+    margin-right:7px;
+    vertical-align: middle;
+}
+.user span{
+    font-size:16px;
+    color:#666;
+}
+.homepage {
+    height: 600px;
+    background-color:#B0C4DE;
+  }
+.homepage .welcome{
+    margin-top:60px;
+    margin-left:120px;
+    padding:100px;
+    width:800px;
+    height:400px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 30px;
+}
+
+.homepage .welcome h1:hover{
+    font-size:50px;
+    font-family: 楷体;
+    color:green;
+}
+
+	.homepage .evaluate{
+	display:flex;
+	justify-content:flex-end;
+	height:52px;
+	}
+
+	.homepage .evaluate ul{
+    margin-right:50px;
+	display:flex;
+	line-height:52px;
+	}
+	.homepage .evaluate ul a{
+	padding:0 15px;
+	border-right:2px solid white;
+	font-size:16px;
+	color:black;
+	}
+    .homepage .evaluate a:hover{
+        color:green;
+        font-size:20px;
+        border-bottom:2px solid green;
+    }
+	
+.homepage li:last-child a{
+    border-right:0;
+}
+.homepage .banner{
+    display:flex;
+}
+.homepage .left{
+    margin-left:50px;
+    padding: 80px 20px;
+    width:150px;
+    height:548px;
+    background-color: transparent;
+    opacity:0.5;
+}
+.homepage .left a{
+    display:flex;
+    padding-top:12px;
+    height:46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 16px;
+    color:black;
+}
+.homepage .left a:hover{
+    color:green;
+    font-size:20px;
+}
+.footer{
+    margin:10px auto;
+    width:600px;
+    height:300px;
+    background-color: transparent;
+}
+.service{
+    height:600px;
+    background-color: #B0C4DE;
+}
+
+
+.service h3{
+    display:block;
+    
+}
+.service .hd{
+    background-color: white;
+}
+.service .hd ul{
+    display:flex;
+    justify-content:flex-end;
+}
+.service .hd li{
+    margin-bottom:10px;
+}
+.service .hd ul a{
+    padding:0 15px;
+	border-right:2px solid white;
+	font-size:16px;
+	color:black;
+}
+.service .hd li:last-child a{
+    border-right:0;
+}
+.service .hd ul a:hover{
+    color:green;
+    font-size:20px;
+    border-bottom:2px solid green;
+}
+.service h3{
+    width:100px;
+    padding-top:10px;
+    margin-left:50px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.footer p{
+    font-size:12px;
+    color:#666;
+}
+.A{
+    height:400px;
+    margin-top:80px;
+    margin-left:50px;
+    margin-right:50px;
+}
+.service .A .pic:hover{
+    height:220px;
+    background-color: green;
+}
+.service .A ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service .A li{
+    margin-bottom: 14px;
+    width: 300px;
+    height: 271px;
+    background-color: pink;
+}
+.service .A .pic{
+    height:200px;
+}
+.A li .text{
+    padding:30px;
+    height:150px;
+    background-color:#fff;
+}
+.A .text h4:hover{
+    font-size:25px;
+}
+.A .text h4{
+    margin-bottom:13px;
+    height:14px;
+    font-size:18px;
+    line-height:20px;
+    font-weight:400;
+}

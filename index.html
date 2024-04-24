@@ -1,358 +1,505 @@
-<style>
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	}
-	li{
-	list-style:none;
-	}
-	a{
-	text-decoration:none;
-	}
-	.wrapper{
-	margin:0 auto;
-	width:1840px;
-	}
-
-	body{
-	background-image:url(s5.png);
-	background-size:100%;
-	}
-
-	
-	.header{
-	display:flex;
-	height:88px;
-	}
-	
-	.logo{
-	margin-right:20px;
-	margin-left:70px;
-	margin-top:20px;
-	width:88px;
-	height:88px;
-	}
-	
-	.logo a{
-	display:block;
-	width:88px;
-	height:88px;
-	border-radius:44px;
-	background-image:url(k5.png);
-	font-size:0;
-	}
-
-	
-	.nav{
-	margin-top:33px;
-	margin-right:50px;
-	
-	}
-	
-	.nav ul{
-	display:flex;
-	
-	margin-left:800px;
-	}
-	
-	.nav li{
-	margin-left:50px;
-	}
-	
-	.nav li a{
-	font-size:23px;
-	color:#333;
-	padding-bottom:10px;
-	}
-	
-	.nav li a:hover{
-	border-bottom:2px solid #5EB69C;
-	color:#5EB69C;
-	}
-	
-	.search{
-	display:flex;
-	margin-top:33px;
-	margin-right:45px;
-	width:170px;
-	height:34px;
-	background-color:transparent;
-	border:0;
-	}
-	
-	.search .iconfont{
-	padding-top:5px;
-	margin-right:8px;
-	font-size:18px;
-	color:white;
-	}
-
-	.search input{
-	flex:1;
-	width:0;
-	border:0;
-	background-color:transparent;
-	font-size:40px;
-	}
-	.search input::placeholder{
-	font-size:16px;
-	color:white;
-	}
-
-	.banner{
-	height:500px;
-	background-color:transparent;
-	
-	}
-	
-	.banner .wrapper{
-	display:flex;
-	position:relative;
-
-	height:1100px;
-	overflow:hidden;
-	opacity:0.7;
-	}
-
-	.subnav{
-	position:absolute;
-	margin-top:50px;
-	left:0;
-	top:0;
-	width:250px;
-	height:1000px;
-	background-color:rgba(0,0,0,0.42);
-	}
-	.subnav li{
-	padding-left:50px;
-	padding-right:12px;
-	height:50px;
-	line-height:50px;
-	color:#fff;
-	cursor:pointer;
-	}
-	.subnav li:hover{
-	background-color:	#B0C4DE;
-	}
-	
-	.subnav li a{
-	margin-right:5px;
-	font-size:18px;
-	color:#fff;
-	}
-	
-	.one{
-	margin-top:50px;
-	margin-left:300px;
-	margin-right:100px;
-	padding:20px 50px;
-	width:1500px;
-	height:1000px;
-	background-color:white;
-	line-height:50px;
-	box-shadow:2px 5px 10px 1px rgba(0,0,0,0.5);
-	overflow:auto;
-	}
-
-	.gerenxinxi{
-	padding-top:50px;
-	font-size:20px;
-	}
-	.subnav li .biaozhu{
-	color:#CD5C5C;
-	}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/base.css">
+    <link rel = "stylesheet" href = "css/index.css">
+</head>
 <body>
-		<div class = "header wrapper">
-		<!-- logo -->
-		<div class = "logo">
-			<h1><a href = "#"></a></h1>
-		</div>
-		<div class = "gerenxinxi">202212303073廖燕燕</div>
-		<!-- 导航 -->
-		<div class = "nav">
-			<ul>
-				<li><a href = "http://localhost:8080/LYY1/c1-1.html" >首页</a></li>
-				<li><a href = "#" >个人信息</a></li>
-			</ul>
-		</div>
-		<!-- 搜索 -->
-		<div class = "search">
-			<span class = "iconfont icon-search"></span>
-			<input type = "text" font-size="50px"  placeholder = "搜一搜">
-		</div>
-		
-
-	</div>
+    <!-- 头部 -->
+    <div class = "header" id="a9">
+        <div class = "wrapper">
+            <!-- logo -->
+            <div class = "logo">
+                <h1><a href = "#">活力重生</a></h1>
+            </div>
+            <!--导航-->
+            <div class = "nav">
+                <ul>
+                    <li><a href = "https://4133lyy.github.io/Lyy1.github.io/"  >首页</a></li>
+                </ul>
+            </div>
+            <!--搜索-->
+            <div class = "search">
+                <input type = "text" placeholder = "请输入关键字">
+                <a href = "#"></a>
+            </div>
+            <!--用户-->
+            <div class = "user">
+                <a href = "#">
+                    <img src = "uploads/user.png" alt = "">
+                    <span>用户名</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 首页 -->
+    <div class = "homepage" >
+        <div class = "evaluate">
+            <ul>
+                <li><a href = "#"  >用户评价</a></li>
+                <li><a href = "#">立即注册</a></li>
+                <li><a href = "#">预约服务</a></li>
+            </ul>
+        </div>
+        <div class = "banner">
+            <div class = "left">
+                <ul>
+                    <li><a href="#a1" >服务介绍</a></li>
+                    <li><a href="#a2">技术应用</a></li>
+                    <li><a href="#a3">用户体验</a></li>
+                    <li><a href="#a4">健康教育</a></li>
+                    <li><a href="#a5">会员专区</a></li>
+                    <li><a href="#a6">新闻与活动</a></li>
+                    <li><a href="#a7">关于我们</a></li>
+                    <li><a href="#a8">联系我们</a></li>
+                  </ul>
+            </div>
+            <div class = "welcome">
+                <p>欢迎来到</p>
+                <br>
+                <h1>活力重生</h1>
+                <br>
+                <p>——您的智能运动康复伙伴</p>
+                <br>
+                <p>我们致力于通过科技的力量，助您焕发活力，重获健康！</p>
+                <p>活力重生平台集个性化康复计划、智能评估系统、健康管理于一体，让您享受全方位的康复服务</p>
+            </div>
+        </div>
+    </div>
+    <!-- 服务介绍 -->
+    <div class = "service" id = "a1">
+        <div class = "hd">
+            <h3>服务介绍</h3>
+            <ul>
+                <li><a href= "#">运动康复服务</a></li>
+                <li><a href= "#">个性化康复计划</a></li>
+                <li><a href= "#">科技支持</a></li>
+                <li><a href= "#">成功案例</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>运动康复服务</h4>
+                            <p>涵盖物理治疗、运动训练等多项服务，满足您不同层次的康复需求。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>个性化康复计划</h4>
+                            <p>根据用户身体状况和运动能力，量身定制康复方案，让康复更高效。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>科技支持</h4>
+                            <p>智能评估系统、数据分析等科技工具助力康复，让您轻松掌握康复进展。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>成功案例</h4>
+                            <p>分享用户康复故事，见证活力重生的力量。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 技术应用 -->
+    <div class = "service" id = "a2">
+        <div class = "hd">
+            <h3>技术应用</h3>
+            <ul>
+                <li><a href= "#">智能评估系统</a></li>
+                <li><a href= "#">数据分析</a></li>
+                <li><a href= "#">人工智能辅助</a></li>
+                <li><a href= "#">持续研发</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>智能评估系统</h4>
+                            <p>精准分析用户身体状况，为制定个性化康复计划提供科学依据。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>数据分析</h4>
+                            <p>通过数据分析优化康复方案，提升康复效果。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>人工智能辅助</h4>
+                            <p>AI技术助力康复过程，让康复更加智能、高效。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>持续研发</h4>
+                            <p>不断创新，保持技术领先，为用户提供更好的康复体验。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  用户体验-->
+    <div class = "service" id = "a3">
+        <div class = "hd">
+            <h3>用户体验</h3>
+            <ul>
+                <li><a href= "#">注册流程</a></li>
+                <li><a href= "#">预约系统</a></li>
+                <li><a href= "#">用户界面</a></li>
+                <li><a href= "#">客户支持</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>注册流程</h4>
+                            <p>简洁明了的注册步骤，让您轻松成为平台用户。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>预约系统</h4>
+                            <p>在线预约服务，方便快捷，让您随时享受专业康复指导。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>用户界面</h4>
+                            <p>简洁友好的界面设计，让您轻松上手，畅享康复服务。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>客户支持</h4>
+                            <p>专业的客服团队为您提供全方位的支持与帮助。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--健康教育  -->
+    <div class = "service" id = "a4">
+        <div class = "hd">
+            <h3>健康教育</h3>
+            <ul>
+                <li><a href= "#">健康资讯</a></li>
+                <li><a href= "#">常见问题解答</a></li>
+                <li><a href= "#">线上研讨会</a></li>
+                <li><a href= "#">资源下载</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>健康资讯</h4>
+                            <p>定期发布运动康复和健康生活的知识，让您了解更多健康信息</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>常见问题解答</h4>
+                            <p>针对用户常见问题提供解答，帮助您更好地使用平台服务。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>线上研讨会</h4>
+                            <p>邀请专家进行线上讲解，分享康复经验和健康知识。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>资源下载</h4>
+                            <p>提供丰富的电子书、手册和工具，助您更好地管理健康。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 会员专区 -->
+    <div class = "service" id = "a5">
+        <div class = "hd">
+            <h3>会员专区</h3>
+            <ul>
+                <li><a href= "#">账户管理</a></li>
+                <li><a href= "#">进度跟踪</a></li>
+                <li><a href= "#">专属优惠</a></li>
+                <li><a href= "#">社区互动</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>账户管理</h4>
+                            <p>轻松查看个人信息、预约记录和支付详情，一站式管理您的账户。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>进度跟踪</h4>
+                            <p>实时监控康复进度，让您随时掌握康复情况。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>专属优惠</h4>
+                            <p>会员专享优惠和促销信息，让您享受更多实惠。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>社区互动</h4>
+                            <p>加入论坛或聊天室，与其他用户分享经验、交流心得。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 新闻与活动 -->
+    <div class = "service" id = "a6">
+        <div class = "hd">
+            <h3>新闻与活动</h3>
+            <ul>
+                <li><a href= "#">最新动态</a></li>
+                <li><a href= "#">即将到来的活动</a></li>
+                <li><a href= "#">活动回顾</a></li>
+                <li><a href= "#">媒体报道</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>最新动态</h4>
+                            <p>平台新闻更新和行业动态一网打尽，让您了解最新发展。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>即将到来的活动</h4>
+                            <p>提前了解即将举行的线上或线下活动，精彩不容错过。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>活动回顾</h4>
+                            <p>回顾过去活动的精彩瞬间和参与者反馈，感受活力重生的魅力。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>媒体报道</h4>
+                            <p>展示主流媒体对平台的报道，见证我们的实力与影响力。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class = "service" id = "a7">
+        <div class = "hd">
+            <h3>关于我们</h3>
+            <ul>
+                <li><a href= "#">平台简介</a></li>
+                <li><a href= "#">团队介绍</a></li>
+                <li><a href= "#">合作伙伴</a></li>
+                <li><a href= "#">社会贡献</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>平台简介</h4>
+                            <p>活力重生平台自创立以来，始终坚持以用户为中心，通过科技创新推动运动康复事业发展。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>团队介绍</h4>
+                            <p>汇聚业内精英，核心团队拥有丰富的医疗和科技背景，为您的康复保驾护航。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>合作伙伴</h4>
+                            <p>与国内外知名医疗机构和科研单位紧密合作，共同探索康复新领域。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>社会贡献</h4>
+                            <p>积极参与公益活动，回馈社会，传递正能量。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--联系我们  -->
+    <div class = "service" id = "a8">
+        <div class = "hd">
+            <h3>联系我们</h3>
+            <ul>
+                <li><a href= "#">联系方式</a></li>
+                <li><a href= "#">社交媒体链接</a></li>
+                <li><a href= "#">地图导航</a></li>
+                <li><a href= "#">反馈表单</a></li>
+                <li><a href = "#a9">首页</a></li>
+            </ul>
+        </div>
+        <div class = "A">
+            <ul>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>运动康复服务</h4>
+                            <p>涵盖物理治疗、运动训练等多项服务，满足您不同层次的康复需求。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>个性化康复计划</h4>
+                            <p>根据用户身体状况和运动能力，量身定制康复方案，让康复更高效。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>科技支持</h4>
+                            <p>智能评估系统、数据分析等科技工具助力康复，让您轻松掌握康复进展。</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <div class = "pic"><img src = "" alt = ""></div>
+                        <div class = "text">
+                            <h4>成功案例</h4>
+                            <p>分享用户康复故事，见证活力重生的力量。</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  法律与隐私-->
+   <div class = "footer">
+    
+        <p>隐私政策：我们尊重并保护您的个人隐私，详细阐述数据收集、使用和保护政策。</p><br>
+        <p>使用条款：明确用户在使用平台服务时需遵守的规则和条款，确保公平、公正的服务环境。</p><br>
+        <p>版权声明：平台内容受版权保护，声明版权归属和使用限制，维护创作者权益。</p>    <br>
+        <p>免责声明：明确平台对于用户使用服务的风险承担，保障用户权益。</p>   
+   </div>
 </body>
-<div class = "banner">
-		<div class = "wrapper">
-			<div class = "subnav">
-				<ul>
-					<li ><a href = "https://4133lyy.github.io/Lyy1.github.io/#"  >第一章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						 
-						  	<option value = "https://4133lyy.github.io/Lyy1.github.io/#" >第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c1-2.html">第二题</option>
-						  	<option value = "http://localhost:8080/LYY1/c1-3.html">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c2-1.html" >第二章</a>
-						  <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c2-1.html" >第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c2-2.html" >第二题</option>
-						  	<option value = "http://localhost:8080/LYY1/c2-3.html" >第三题</option>
-						  	<option value = "http://localhost:8080/LYY1/c2-4.html" >第四题</option>
-						  	<option value = "http://localhost:8080/LYY1/c2-5.html" > 第五题</option>
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c3-1.html" >第三章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c3-1.html">第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c3-2.html" >第二题</option>
-						  	<option value = "http://localhost:8080/LYY1/c3-3.html" >第三题</option>
-						  	<option value = "http://localhost:8080/LYY1/c3-4.html" >第四题</option>
-						  	<option value = "http://localhost:8080/LYY1/c3-5.html">第五题</option>
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c4-1.html" >第四章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c4-1.html" >第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c4-2.html" >第二题</option>
-						  	<option value = "http://localhost:8080/LYY1/c4-3.html" >第三题</option>
-						  	<option value = "http://localhost:8080/LYY1/c4-4.html" >第四题</option>
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c5-1.html" >第五章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c5-1.html">第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c5-2.html" >第二题</option>
-						  	<option value = "http://localhost:8080/LYY1/c5-3.html" >第三题</option>
-						  	<option value = "http://localhost:8080/LYY1/c5-4.html" >第四题</option>
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c6-1.html">第六章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c6-1.html" >第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c6-2.html" >第二题</option>
-						  	
-						 </select></li>
-					<li><a href = "http://localhost:8080/LYY1/c7-1.html">第七章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c7-1.html">第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c7-2.html">第二题</option>
-						  	
-						 </select></li>
-					<li><a href = "http://localhost:8080/LYY1/c8-1.html"  >第八章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c8-1.html" >第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c8-2.html" >第二题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c9-1.html" class = "biaozhu">第九章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c9-1.html" >第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c9-2.html" selected>第二题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "http://localhost:8080/LYY1/c10-1.html" >第十章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option value = "http://localhost:8080/LYY1/c10-1.html">第一题</option>
-						  	<option value = "http://localhost:8080/LYY1/c10-2.html">第二题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十一章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十二章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十三章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十四章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十五章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十六章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#">第十七章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第十八章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#">第十九章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-					<li><a href = "#" >第二十章</a>
-						 <select name = "pageselect" onchange="self.location.href=options[selectedIndex].value">
-						  	<option >第一题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第二题</option>
-						  	<option value = "http://localhost:8080/MyWeb/homework1.jsp">第三题</option>
-						  	
-						 </select>
-					</li>
-				</ul>
-			</div>
-			<div class = "one">
-		
-		<h1>5.使用EasyUI之前必须先声明UI控件，有哪两种声明方法？</h1>
-<img src = "k13.png">
-</div>
-	</div>
-		</div>
-</body>
+</html>
